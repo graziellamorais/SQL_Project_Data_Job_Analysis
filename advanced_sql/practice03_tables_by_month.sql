@@ -104,10 +104,23 @@ GROUP BY
 ORDER BY
     salary_range DESC;
 
-
+-- Using a subquery to filter job postings made in January
+-- This subquery selects all job postings from January and the outer query retrieves all columns from that result
+-- This is useful for isolating data for specific analysis or reporting
 SELECT *
 FROM ( -- Subquery starts here
     SELECT *
     FROM job_postings_fact
     WHERE EXTRACT(MONTH FROM job_posted_date) = 1
 ) AS janurary_jobs; -- Subquery ends here
+
+-- Using a Common Table Expression (CTE) to filter job postings made in January
+-- This CTE selects all job postings from January and the main query retrieves all columns from that result
+-- CTEs can improve readability and organization of complex queries
+WITH janurary_jobs AS (
+    SELECT *
+    FROM job_postings_fact
+    WHERE EXTRACT(MONTH FROM job_posted_date) = 1
+)
+SELECT *
+FROM janurary_jobs;
