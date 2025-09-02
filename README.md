@@ -1,5 +1,7 @@
 SQL Project - Job Analysis
 
+
+
 # Introduction
 Dive into the data job market! Focusing on data analyst roles in Berlin, Germany, this project explores top-paying jobs, in-demand skills, and where high demand meets high salary in data analytics.
 
@@ -52,6 +54,9 @@ Other top-paying companies included **Flink, SumUp, Vattenfall, and Veeva System
 
 Interestingly, titles varied from Data Analyst to more senior positions like Principal Data Analyst and Data Model Manager, suggesting that higher pay is often tied to specialization or leadership responsibilities.
 
+![Top Highest-Paying Data Analyst Jobs](assets/top_paying_jobs.png)
+*A bar chart that visualizes the top 9 highest paying data analyst jobs*
+
 ### 2. Skills required for the top-paying jobs
 **Query:** [2_top_paying_job_skills.sql](project_sql/2_top_paying_job_skills.sql)
 
@@ -65,6 +70,8 @@ Other skills included **R, Power BI, Looker, Git, and AWS**, showing the breadth
 
 **Insight:** Strong database (SQL), visualization (Tableau), and programming (Python) skills form the core toolkit for high-earning data analysts in Berlin.
 
+![Skills Required for Top-Paying Jobs](assets/top_paying_job_skills.png)
+*A bar chart that shows the most popular skills associated with the top paying data analyst jobs*
 
 ### 3. Most In-Demand Skills for Data Analysts
 **Query:** [3_top_demanded_skills.sql](project_sql/3_top_demanded_skills.sql)
@@ -78,6 +85,9 @@ By counting skill frequency across all Data Analyst postings, I identified the t
 - **R (192)** and **Excel (173)** also rank highly, showing that statistical and spreadsheet tools remain relevant.
 
 **Insight:** SQL is indispensable, while Python and Tableau are fast becoming industry standards.
+
+![Top 5 Most Demanded Skills](assets/top_demanded_skills.png)
+*A bar chart that displays the top skills in demand*
 
 ### 4. Skills associated with higher salaries
 **Query:** [4_top_paying_skills.sql](project_sql/4_top_paying_skills.sql)
@@ -94,6 +104,9 @@ I calculated the average salary per skill across job postings with salary data.
 
 **Insight:** Specialized tools (Power BI, MATLAB, AWS) can boost salaries, while SQL and Tableau remain essential entry requirements.
 
+![Top 10 Highest-Paying Skills](assets/top_paying_skills.png)
+*A bar chart that illustrates the highest paying skills for data analysts*
+
 ### 5. Optimal skills to learn (high dmand + high salary)
 **Query:** [5_optimal_skills.sql](project_sql/5_optimal_skills.sql)
 
@@ -107,6 +120,8 @@ Finally, I combined demand and salary data to identify skills offering the best 
 
 **Insight:** For aspiring data analysts in Berlin, learning Python, SQL, and Tableau provides both job security and strong salary prospects.
 
+![Optimal Skills - Demand vs Average Salary](assets/optimal_skills.png)
+*A scatter plot that represents the relationship between the demand and the average salary for various skills*
 
 # What I learned
 Working on this project strengthened both my SQL skills and my ability to analyze job market data.
