@@ -80,8 +80,7 @@ GROUP BY
 HAVING COUNT(skills_job_dim.job_id) > 2 -- Filter to include only skills with demand count greater than 2
 ORDER BY
     avg_salary DESC,
-    demand_count DESC
-LIMIT 10;
+    demand_count DESC;
 
 /*
 The most optimal skills for data analysts in Berlin, Germany, balancing high demand and high average salaries are:
