@@ -38,7 +38,7 @@ Here’s how I approached each question:
 
 I filtered the dataset to include only Data Analyst roles in Berlin with non-null salaries. Ordering by average yearly salary revealed the top 10 highest-paying opportunities.
 
-The highest salary reached **€166,420**, offered by Volt.io for a Head of Data Analytics role.
+The highest salary reached **$166,420**, offered by Volt.io for a Head of Data Analytics role.
 
 Other top-paying companies included **Flink, SumUp, Vattenfall, and Veeva Systems**, with salaries ranging from €100,500 to €111,202.
 
@@ -76,13 +76,13 @@ By counting skill frequency across all Data Analyst postings, I identified the t
 
 I calculated the average salary per skill across job postings with salary data.
 
-- **Power BI** topped the list with an average salary of €166,420, suggesting its strong association with well-paying roles.
+- **Power BI** topped the list with an average salary of $166,420, suggesting its strong association with well-paying roles.
 
-- Programming skills like **Python (€111,574)** and **R (€111,189)** followed closely.
+- Programming skills like **Python ($111,574)** and **R ($111,189)** followed closely.
 
 - Tools like **MATLAB, Git, Atlassian, and AWS** also showed high salary associations.
 
-- Surprisingly, **SQL (€86,892)** and **Tableau (€92,830)**, while widely required, ranked lower in salary averages — indicating they are baseline skills rather than premium differentiators.
+- Surprisingly, **SQL ($86,892)** and **Tableau ($92,830)**, while widely required, ranked lower in salary averages — indicating they are baseline skills rather than premium differentiators.
 
 **Insight:** Specialized tools (Power BI, MATLAB, AWS) can boost salaries, while SQL and Tableau remain essential entry requirements.
 
