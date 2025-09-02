@@ -8,7 +8,7 @@ plt.style.use('seaborn-v0_8-whitegrid')
 # --- Plot 1: Top 10 Paying Jobs ---
 try:
     # Use the specific absolute file path provided by the user
-    file_path = '/Users/graziellamorais/Desktop/Data projects/SQL_Project_Data_Job_Analysis/csv_files/1_top_paying_jobs.csv'
+    file_path = 'csv_files/1_top_paying_jobs.csv'
     df_jobs = pd.read_csv(file_path)
 
     # Create a unique job label by combining job title and company name

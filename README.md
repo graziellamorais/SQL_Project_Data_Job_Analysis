@@ -25,6 +25,14 @@ For my deep dive into the data analyst job market, I used several key tools:
 
 - **PostgreSQL:** The database management system I used to handle job posting data.
 
+- **Python:** Used to process query results, manipulate CSV data, and generate visualizations.
+
+    - **pandas** – For data manipulation and analysis.
+
+    - **matplotlib** – For creating clear and informative visualizations.
+
+    - **os** – For handling file paths and directory operations.
+
 - **Visual Studio Code:** My primary tool for writing and executing SQL queries.
 
 - **Git & GitHub:** Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
