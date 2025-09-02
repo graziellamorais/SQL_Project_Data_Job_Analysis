@@ -25,13 +25,13 @@ For my deep dive into the data analyst job market, I used several key tools:
 
 - **PostgreSQL:** The database management system I used to handle job posting data.
 
-- **Python:** Used to process query results, manipulate CSV data, and generate visualizations.
+- **Python:** Used for creating visualizations from CSV outputs.
 
-    - **pandas** – For data manipulation and analysis.
+    - **pandas** – To read CSV files for plotting.
 
-    - **matplotlib** – For creating clear and informative visualizations.
+    - **matplotlib** – For creating clear and informative charts.
 
-    - **os** – For handling file paths and directory operations.
+    - **os** – For handling file paths when saving charts.
 
 - **Visual Studio Code:** My primary tool for writing and executing SQL queries.
 
