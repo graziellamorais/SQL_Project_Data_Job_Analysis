@@ -28,7 +28,7 @@ try:
                 bbox=dict(boxstyle="round,pad=0.3", fc='white', ec='none', alpha=0.7))
 
     # Customize the chart
-    ax1.set_title('Top Highest-Paying Data Analyst Jobs', fontsize=18, fontweight='bold', pad=20)
+    ax1.set_title('Top Highest-Paying Data Analyst Jobs in Berlin (2023)', fontsize=18, fontweight='bold', pad=20)
     ax1.set_xlabel('Average Salary (USD)', fontsize=12)
     ax1.set_ylabel('Job Title', fontsize=12)
     ax1.invert_yaxis()  # To display the highest salary at the top
@@ -57,7 +57,7 @@ try:
         ax2.text(bar.get_width(), bar.get_y() + bar.get_height()/2, 
                 f'{int(bar.get_width())}', va='center', ha='left', fontsize=10, color='black',
                 bbox=dict(boxstyle="round,pad=0.3", fc='white', ec='none', alpha=0.7))
-    ax2.set_title('Skills Required for Top-Paying Jobs', fontsize=18, fontweight='bold', pad=20)
+    ax2.set_title('Skills Required for Top-Paying Jobs in Berlin (2023)', fontsize=18, fontweight='bold', pad=20)
     ax2.set_xlabel('Number of Mentions', fontsize=12)
     ax2.set_ylabel('Skills', fontsize=12)
     ax2.invert_yaxis()
@@ -81,7 +81,7 @@ try:
         ax3.text(bar.get_x() + bar.get_width()/2, yval, 
                 f'{int(yval)}', ha='center', va='bottom', fontsize=10, color='black',
                 bbox=dict(boxstyle="round,pad=0.3", fc='white', ec='none', alpha=0.7))
-    ax3.set_title('Top 5 Most Demanded Skills', fontsize=18, fontweight='bold', pad=20)
+    ax3.set_title('Top 5 Most Demanded Data Analyst Skills in Berlin (2023)', fontsize=18, fontweight='bold', pad=20)
     ax3.set_xlabel('Skills', fontsize=12)
     ax3.set_ylabel('Demand Count', fontsize=12)
     plt.xticks(rotation=45, ha='right')
@@ -136,7 +136,7 @@ try:
             fontsize=10,
             fontweight='bold'
         )
-    ax5.set_title('Optimal Skills: Demand vs. Average Salary', fontsize=18, fontweight='bold', pad=20)
+    ax5.set_title('Optimal Skills: Demand vs. Average Salary in Berlin (2023)', fontsize=18, fontweight='bold', pad=20)
     ax5.set_xlabel('Average Salary (USD)', fontsize=12)
     ax5.set_ylabel('Demand Count', fontsize=12)
     ax5.set_xlim(df_optimal['avg_salary'].min() * 0.95, df_optimal['avg_salary'].max() * 1.1)

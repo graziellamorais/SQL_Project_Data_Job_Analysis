@@ -1,7 +1,7 @@
 SQL Project - Job Analysis
 
 # Introduction
-Dive into the data job market! Focusing on data analyst roles in Berlin, Germany, this project explores top-paying jobs, in-demand skills, and where high demand meets high salary in data analytics.
+Dive into the data job market! Focusing on data analyst roles in Berlin, Germany, in 2023, this project explores top-paying jobs, in-demand skills, and where high demand meets high salary in data analytics.
 
 SQL queries? Check them out here: [project_sql folder](/project_sql/)
 
@@ -103,7 +103,7 @@ I calculated the average salary per skill across job postings with salary data.
 **Insight:** Specialized tools (Power BI, MATLAB, AWS) can boost salaries, while SQL and Tableau remain essential entry requirements.
 
 ![Top 10 Highest-Paying Skills](assets/top_paying_skills.png)
-*A bar chart that illustrates the highest paying skills for data analysts*
+*A bar chart that illustrates the highest paying skills for data analysts in Berlin (2023)*
 
 ### 5. Optimal skills to learn (high dmand + high salary)
 **Query:** [5_optimal_skills.sql](project_sql/5_optimal_skills.sql)
