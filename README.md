@@ -126,14 +126,15 @@ Working on this project strengthened both my SQL skills and my ability to analyz
 
 Some key takeaways include:
 
-- How to use joins and CTEs to combine multiple tables and extract meaningful insights.
-The importance of filtering for non-null values to ensure accurate results.
+- How to **merge tables** using different types of joins and apply CTEs to simplify complex queries.
 
-- How to apply aggregations (COUNT, AVG, ROUND) to measure demand and salary impact across different skills.
+- The importance of **WHERE clauses** and filtering for **non-null values** to ensure accurate results.
 
-- That the most in-demand skills (SQL, Python, Tableau) don’t always correspond to the highest-paying skills (Power BI, Python, R).
+- How to use **GROUP BY** effectively to organize data and apply aggregations such as **COUNT, AVG, ROUND** to measure demand and salary impact across different skills.
 
-- How to identify optimal skills by combining both demand and salary measures, which provides a more balanced view of career priorities.
+- That the most **in-demand skills** (SQL, Python, Tableau) don’t always correspond to the **highest-paying skills** (Power BI, Python, R).
+
+- How to identify **optimal skills** by combining both demand and salary measures, providing a more balanced view of career priorities.
 
 
 # Conclusions
@@ -149,3 +150,66 @@ Key conclusions include:
 - Visualization tools like Tableau and Looker also play an important role, offering good demand and solid salary potential.
 
 - For aspiring or current data analysts, focusing on a mix of SQL, Python, and a BI/visualization tool is the best way to maximize both job opportunities and earning potential.
+
+# Setup / Getting Started
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/graziellamorais/sql_berlin_data_analyst_jobs_2023.git
+cd sql_berlin_data_analyst_jobs_2023
+```
+
+### 2. Set up PostgreSQL
+1. Install [PostgreSQL](https://www.postgresql.org/download/).
+
+2. Open your SQL client (e.g., psql or PgAdmin).
+
+3. Run the scripts inside the ```sql_load/``` folder in order:
+
+- ```1_create_database.sql``` → creates the database.
+
+- ```2_create_tables.sql``` → creates the necessary tables.
+
+- ```3_modify_tables.sql``` → applies adjustments to the schema.
+
+### 3. Load the data
+- Import the **raw CSV files** into PostgreSQL:
+
+    - ```company_dim.csv```
+
+    - ```job_postings_fact.csv```
+
+    - ```skills_dim.csv```
+
+    - ```skills_job_dim.csv```
+
+These files are the base tables for the analysis.
+
+### 4. Run the SQL analysis
+- Navigate to the ```project_sql/``` folder.
+
+- Each file corresponds to one part of the analysis:
+
+    -  ```1_top_paying_jobs.sql```
+
+    - ```2_top_paying_job_skills.sql```
+
+    - ```3_top_demanded_skills.sql```
+
+    - ```4_top_paying_skills.sql```
+
+    - ```5_optimal_skills.sql```
+
+- Running these queries will generate insights and export CSV results into the ```csv_files/``` folder.
+
+### 5. Generate visualizations (optional)
+After running the SQL queries in ```project_sql/```, save the result CSVs (e.g., ```1_top_paying_jobs.csv```, ```3_top_demanded_skills.csv```) in ```csv_files/```.
+
+To reproduce the graphs, make sure you have **Python 3.12.4** installed and then install the required libraries:
+
+```bash
+pip install pandas matplotlib
+```
+
+Then run the script in ```assets/graphs.py``` to generate the charts from the CSV files. The output images (e.g., ```top_paying_jobs.png```, ```optimal_skills.png```) will be saved in the ```assets/``` folder.
